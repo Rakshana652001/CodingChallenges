@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        int c = A.length()+B.length();
+        System.out.println(c);
+        int i = A.compareTo(B);
+        if(i>0)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+        String aCap = A.substring(0,1).toUpperCase();
+        String aRest = A.substring(1).toLowerCase();
+        String concatA = aCap.concat(aRest);
+        String bCap = B.substring(0,1).toUpperCase();
+        String bRest = B.substring(1).toLowerCase();
+         String concatB = bCap.concat(bRest);
+        System.out.println(concatA+" "+concatB);
+        
+        
+        
+    }
+}
+
+
+
